@@ -1,0 +1,23 @@
+:root{
+    --dourado: #BD9464;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    width: 100%;
+}
+
+.titleHeader{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.titleHeader h1{
+
+}
