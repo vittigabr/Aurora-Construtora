@@ -1,6 +1,10 @@
 :root{
-    --dourado: #BD9464;
-    
+    --brown: #BD9464;
+    --dark-blue: #17242A;
+    --white: #fff;
+    --dark-green: #479457;
+
+
 }
 
 *{
@@ -19,5 +23,5 @@
 }
 
 .titleHeader h1{
-
+    color: var(--brown);
 }
