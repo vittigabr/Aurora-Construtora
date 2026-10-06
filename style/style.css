@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
 :root{
     --brown: #BD9464;
+    --brown-hover: #b47d3e;
     --dark-blue: #17242A;
+    --dark-blue-hover: #122b38;
     --white: #fff;
     --dark-green: #479457;
-
-
+    --font-body: "Inter", sans-serif; 
+    --font-title: "Manrope", sans-serif;
 }
 
 *{
@@ -15,13 +20,113 @@
 
 .cabecalho{
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #f5f5f5;
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    height: 120px;
+    background-color: var(--white);
 }
 
 .titleHeader{
     font-size: 30px;
     text-transform: uppercase;
+    font-family: var(--font-title);
 }
 
 .titleHeader h1{
     color: var(--brown);
+}
+
+.titleHeader p{
+    font-size: 20px;
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    font-family: var(--font-title);
+    font-size: 25px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: var(--dark-blue-hover);
+}
+
+.buttonTalk{
+    font-size: 25px;
+    background-color: var(--brown);
+    text-decoration: none;
+    padding: 20px 50px;
+    border-radius: 8px;
+    color: var(--white);
+    font-family: var(--font-body);
+    transition: 0.3s;
+}
+
+.buttonTalk:hover{
+    background-color: var(--brown-hover);
+}
+
+main{
+    margin-top: 120px;
+}
+
+.home{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: var(--dark-blue);
+}
+
+.conteudoHome{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 540px;
+    margin-top: 80px;
+    margin-left: 100px;
+    font-family: var(--font-body);
+    font-size: 30px;
+    gap: 50px;
+}
+
+.conteudoHome small{
+    text-transform: uppercase;
+    color: var(--brown);
+}
+
+.conteudoHome h1, p{
+    color: var(--white);
+}
+
+.buttonsHome{
+    display: flex;
+    gap: 25px;
+}
+
+.buttonsHome a{
+    text-decoration: none;
+    color: var(--white);
+    padding: 20px 50px;
+}
+
+.buttonBrown{
+    background-color: var(--brown);
+    border-radius: 8px;
+}
+
+.buttonWhite{
+    border: 2px solid var(--white);
+    border-radius: 8px;
 }
