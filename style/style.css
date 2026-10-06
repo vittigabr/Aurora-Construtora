@@ -43,6 +43,7 @@
 
 .titleHeader p{
     font-size: 20px;
+    color: var(--dark-blue);
 }
 
 .menu{
